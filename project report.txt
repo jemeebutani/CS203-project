@@ -1,0 +1,22 @@
+group member:- jemee butani(2020csb1091)
+               Vaibhav (2020csb1215)
+
+Random number generator
+
+Objective :- To generate a random number in Verilog using an LFSR (Liner Feedback Shift Register). 
+
+Functionality:- 
+A random number generator is a hardware device or software algorithm that generates a number that is taken from a limited or unlimited distribution and outputs it. The two main types of random number generators are 
+•	pseudo random number generators 
+•	true random number generators.
+Here we implement 13 bit random number generator.
+
+Implementation :-  
+it would be implemented as RTL(using LFSR).
+LFSR is simply a shift register with some of its bits (known as taps) XOR'd with themselves to create a feedback term.
+LFSR s width and it's repeatability must be kept under consideration .An N-bit LFSR will be able to generate (2**N) - 1 random bits before it starts repeating. For example a 30 bit LFSR will have 1073741823 random states before repeating, so for most practical purposes this can be considered true random.
+An LFSR is good for generating a stream of random bits. It does not generate a random number by itself but only the feedback bit is random. However that does not mean that we cannot use this fact to generate a random number. We will implemented  the same to generate random number.
+
+Application:- 
+Random number generators have applications in gambling, statistical sampling, computer simulation, cryptography, completely randomized design, and other areas where producing an unpredictable result is desirable. 
+
